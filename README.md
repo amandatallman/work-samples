@@ -32,7 +32,7 @@ Also, in case you were wondering, Christopher Pike is the answer to the Kirk vs.
 <br/>  
 
 
-## Rapidfire  
+## Nuts and Bolts  
 <table><tr><td valign="top" width="50%">
 
 - 🔭 I am currently looking for opportunities to help business streamline their processes.  
