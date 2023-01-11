@@ -1,5 +1,3 @@
-# work-samples
-A collection of various PDF documents from past college and employment projects.
 ## 👋 Hello there! I'm Amanda Tallman!  
   
 
@@ -22,7 +20,7 @@ A collection of various PDF documents from past college and employment projects.
 ### Welcome to my humble portfolio!  
 Some of the best advice I got in college came from my financial accounting instructor. He told us our first exam in the class was closed book because he wanted us to understand the very basics of accounting. The rest of the exams, however, were open book. Why? Because he said the more important skill in life isn't learning to regurgitate information, rather it's learning how to find the information you need when you don't know it. 
 
-From that point on I've always taken a keen interest in figuring stuff out. From an early age I picked up on this particular skill from my father, who is a (now retired) mechanical engineer. It didn't matter what it was, but if it needed fixing he'd dig in and figure out how to fix it. 
+From that point on I've always taken a keen interest in figuring stuff out. From an early age I picked up on this particular skill from my father, who is a (now retired) mechanical engineer. It didn't matter what it was, but if it needed fixing, he'd dig in and figure out how to fix it. 
 
 Today I use this same enthusiasm for learning to figure out everything from how to run a query for data on the IBM AS/400 to troubleshooting a commercial dishwashing machine in a restaurant. 
 
