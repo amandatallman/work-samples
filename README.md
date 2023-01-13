@@ -86,7 +86,11 @@ Degrees & Awards:
   - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/blogs/Blog%20-%2010%20Things%20To%20Do%20In%20St%20Louis%20Apr%202016.pdf">10 Things To Do In St. Louis 2016</a>
   - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/blogs/Blog%20-%20Perormance%20Review%20Tips.pdf">Performance Review Tips</a>
   - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/blogs/Blog%20-%20A%20Primer%20for%20Writing%20Strategic%20Reports.pdf">Strategic Report Primer</a>
-  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/blogs/Blog%20-%20Understanding%20Debit%20Card%20Disputes.pdf">Understanding Debit Card Disputes
+  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/blogs/Blog%20-%20Understanding%20Debit%20Card%20Disputes.pdf">Understanding Debit Card Disputes</a>
+
+Coding
+- <a href="https://amandatallman.github.io/">Amanda Tallman Portfolio</a>
+- 
 
 
 ## Languages and Tools  
