@@ -59,7 +59,34 @@ Also, in case you were wondering, Christopher Pike is the answer to the Kirk vs.
 <br/>  
 
 ## Document Directory
-Coming soon
+Degrees & Awards:
+  - <a href="https://github.com/amandatallman/work-samples/blob/3e5e4a2c84b3f88748aa9c8cce819704e26aad1b/SNHU%20AMT.pdf">BSc Business Studies - Southern New Hampshire University
+  - <a href="https://github.com/amandatallman/work-samples/blob/3e5e4a2c84b3f88748aa9c8cce819704e26aad1b/McIntosh%20AMT.pdf">ASc Marketing - McIntosh College
+  - <a href="https://github.com/amandatallman/work-samples/blob/3e5e4a2c84b3f88748aa9c8cce819704e26aad1b/College%20Awards.pdf">Acacemic Awards</a>
+  - <a href="https://github.com/amandatallman/work-samples/blob/3e5e4a2c84b3f88748aa9c8cce819704e26aad1b/Work%20Recognition.pdf">Work Recognition</a>
+
+  MS Office Samples:
+  - <a href="https://github.com/amandatallman/work-samples/blob/3e5e4a2c84b3f88748aa9c8cce819704e26aad1b/Template%20-%20Fax%20Document%20Mail%20Merge.pdf">Mail Merge Template</a>
+  - <a href="https://github.com/amandatallman/work-samples/blob/3e5e4a2c84b3f88748aa9c8cce819704e26aad1b/Template%20-%20Sure%20Apparel%20Craigslist%20Ad.pdf">Craigslist Ad Template - Sure Apparell
+  - <a href="https://github.com/amandatallman/work-samples/blob/3e5e4a2c84b3f88748aa9c8cce819704e26aad1b/Dishwasher%20Checklist.pdf">Daily Task Checklist</a>
+
+  Research & Reports:
+  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/Reports/Confronting%20the%20Talent%20Crunch.pdf">Confronting The Talent Crunch</a>
+  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/Reports/Cooking%20the%20Numbers.pdf">Cooking The Numbers - Ames Department Stores</a>
+  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/Reports/Debit%20Card%20Reissue%20Fees.pdf">Debit Card Reissue Fee Strategic Report</a>
+  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/Reports/Dell%20Computers%20Financial%20Ratios.pdf">Dell Computer Financial Ratios</a>
+  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/Reports/Deviant%20Workplace%20Behavior.pdf">Deviant Workplace Behavior</a>
+  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/Reports/Erik%20Peterson%20Case%20Study.pdf">Erik Peterson - Case Study</a>
+  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/Reports/Leading%20Change%20Report.pdf">Leading Change</a>
+  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/Reports/Moral%20Leadership%20vs%20Ethical%20Responsibility.pdf">Moral Leadership Vs Ethical Responsibility</a>
+  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/Reports/Organizational%20Development.pdf">Organizational Development</a>
+  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/Reports/Strategic%20Plan%20Implimentation.pdf">Strategic Plan Implementation</a>
+  
+  Blog Samples:
+  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/blogs/Blog%20-%2010%20Things%20To%20Do%20In%20St%20Louis%20Apr%202016.pdf">10 Things To Do In St. Louis 2016</a>
+  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/blogs/Blog%20-%20Perormance%20Review%20Tips.pdf">Performance Review Tips</a>
+  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/blogs/Blog%20-%20A%20Primer%20for%20Writing%20Strategic%20Reports.pdf">Strategic Report Primer</a>
+  - <a href="https://github.com/amandatallman/work-samples/blob/d4ce4e1fcaedd67c3a4540e4640b7b9fb2204e6e/blogs/Blog%20-%20Understanding%20Debit%20Card%20Disputes.pdf">Understanding Debit Card Disputes
 
 
 ## Languages and Tools  
