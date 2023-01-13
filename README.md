@@ -33,7 +33,7 @@ Also, in case you were wondering, Christopher Pike is the answer to the Kirk vs.
 
 
 ## Nuts and Bolts  
-<table><tr><td valign="top" width="50%">
+<table><tr><td valign="center" width="50%">
 
 - 🔭 I am currently looking for opportunities to help business streamline their processes.  
   
@@ -47,7 +47,7 @@ Also, in case you were wondering, Christopher Pike is the answer to the Kirk vs.
 - ⚡ Fun fact: I make Excel spreadsheets to track tasks in video games.  
 
 
-</td><td valign="top" width="50%">
+</td><td valign="center" width="50%">
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/amandatallman/work-samples/main/assets/star-wars-obi-wan-kenobi.gif" align="center" style="width: 100%" />
