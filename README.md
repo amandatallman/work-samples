@@ -50,7 +50,7 @@ Also, in case you were wondering, Christopher Pike is the answer to the Kirk vs.
 </td><td valign="top" width="50%">
 
 <div align="center">
-<img src="https://rishavanand.github.io/static/images/greetings.gif" align="center" style="width: 100%" />
+<img src="https://raw.githubusercontent.com/amandatallman/work-samples/main/assets/star-wars-obi-wan-kenobi.gif" align="center" style="width: 100%" />
 </div>  
 
 
