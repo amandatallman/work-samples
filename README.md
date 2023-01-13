@@ -90,7 +90,8 @@ Degrees & Awards:
 
 Coding
 - <a href="https://amandatallman.github.io/">Amanda Tallman Portfolio</a>
-- 
+- <a href="https://amandatallman.github.io/practice/">Coding Practice Page</a>
+- <a href="https://github.com/amandatallman/amandatallman.github.io/blob/28c360e3d6233a139563372facec5ce0fe1e52a2/practice.md">Code I'm Currently Working On</a>
 
 
 ## Languages and Tools  
