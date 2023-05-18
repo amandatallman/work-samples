@@ -1,0 +1,35 @@
+Sub CopyDataToNewWorksheet()
+    Dim sourceSheet As Worksheet
+    Dim destinationSheet As Worksheet
+    Dim lastRow As Long
+    Dim i As Long, destinationRow As Long
+    
+    ' Set the source and destination sheets
+    Set sourceSheet = ThisWorkbook.Sheets("Sheet1") ' Replace "Sheet1" with the name of your source sheet
+    Set destinationSheet = ThisWorkbook.Sheets.Add(After:=Sheets(Sheets.Count))
+    destinationSheet.Name = "CopiedData" ' Replace "CopiedData" with the desired name for the new sheet
+    
+    ' Find the last row in column C of the source sheet
+    lastRow = sourceSheet.Cells(sourceSheet.Rows.Count, "C").End(xlUp).Row
+    
+    ' Initialize the destination row
+    destinationRow = 1
+    
+    ' Loop through each row in column C
+    For i = 1 To lastRow
+        ' Check if the value in column C is 9
+        If sourceSheet.Cells(i, "C").Value = 9 Then
+            ' Copy columns A, B, F, I, and J to the destination sheet
+            sourceSheet.Cells(i, "A").Resize(1, 2).Copy destinationSheet.Cells(destinationRow, "A")
+            sourceSheet.Cells(i, "F").Copy destinationSheet.Cells(destinationRow, "C")
+            sourceSheet.Cells(i, "I").Resize(1, 2).Copy destinationSheet.Cells(destinationRow, "D")
+            destinationRow = destinationRow + 1
+        End If
+    Next i
+    
+    ' Autofit the columns in the destination sheet
+    destinationSheet.Columns.AutoFit
+    
+    ' Inform the user that the operation is complete
+    MsgBox "Data copied successfully to the new worksheet.", vbInformation
+End Sub
