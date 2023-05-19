@@ -1,0 +1,35 @@
+Sub MoveReports()
+    Dim olApp As Object ' Outlook Application
+    Dim olNamespace As Object ' Outlook Namespace
+    Dim olSourceFolder As Object ' Source folder
+    Dim olDestFolder As Object ' Destination folder
+    Dim olItem As Object ' Email item
+    Dim dtToday As Date ' Today's date
+    
+    ' Set the Outlook application and namespace
+    Set olApp = CreateObject("Outlook.Application")
+    Set olNamespace = olApp.GetNamespace("MAPI")
+    
+    ' Set the source and destination folder names
+    Set olSourceFolder = olNamespace.GetDefaultFolder(olFolderInbox).Folders("Shift Reports")
+    Set olDestFolder = olSourceFolder.Folders("2023")
+    
+    ' Get today's date
+    dtToday = Date
+    
+    ' Loop through each item in the source folder
+    For Each olItem In olSourceFolder.Items
+        ' Check if the item is an email and created after today
+        If olItem.Class = olMail And olItem.CreationTime > dtToday Then
+            ' Move the item to the destination folder
+            olItem.Move olDestFolder
+        End If
+    Next olItem
+    
+    ' Clean up objects
+    Set olItem = Nothing
+    Set olSourceFolder = Nothing
+    Set olDestFolder = Nothing
+    Set olNamespace = Nothing
+    Set olApp = Nothing
+End Sub
