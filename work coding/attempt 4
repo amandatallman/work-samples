@@ -1,0 +1,52 @@
+Sub CopyDataToNewWorksheet()
+    Dim sourceSheet As Worksheet
+    Dim destinationSheet As Worksheet
+    Dim sourceData As Variant
+    Dim destinationData() As Variant
+    Dim lastRow As Long
+    Dim i As Long, j As Long
+    Dim destinationRow As Long
+    Dim filteredRowCount As Long
+    
+    ' Set the source and destination sheets
+    Set sourceSheet = ThisWorkbook.Sheets("Sheet1") ' Replace "Sheet1" with the name of your source sheet
+    Set destinationSheet = ThisWorkbook.Sheets.Add(After:=Sheets(Sheets.Count))
+    destinationSheet.Name = "CopiedData" ' Replace "CopiedData" with the desired name for the new sheet
+    
+    ' Find the last row in column C of the source sheet
+    lastRow = sourceSheet.Cells(sourceSheet.Rows.Count, "C").End(xlUp).Row
+    
+    ' Read the source data into an array for faster processing
+    sourceData = sourceSheet.Range("A1:J" & lastRow).Value
+    
+    ' Initialize the filtered data array
+    ReDim destinationData(1 To lastRow, 1 To 5)
+    destinationRow = 1
+    
+    ' Loop through each row in the source data array
+    For i = 1 To lastRow
+        ' Check if the value in column C is 9
+        If sourceData(i, 3) = 9 Then
+            ' Copy columns A, B, F, I, and J to the filtered data array
+            destinationData(destinationRow, 1) = sourceData(i, 1)
+            destinationData(destinationRow, 2) = sourceData(i, 2)
+            destinationData(destinationRow, 3) = sourceData(i, 6)
+            destinationData(destinationRow, 4) = sourceData(i, 9)
+            destinationData(destinationRow, 5) = sourceData(i, 10)
+            destinationRow = destinationRow + 1
+        End If
+    Next i
+    
+    ' Resize the filtered data array to the actual number of rows
+    filteredRowCount = destinationRow - 1
+    ReDim Preserve destinationData(1 To filteredRowCount, 1 To 5)
+    
+    ' Write the filtered data to the destination sheet in a single operation
+    destinationSheet.Range("A1").Resize(filteredRowCount, 5).Value = destinationData
+    
+    ' Autofit the columns in the destination sheet
+    destinationSheet.Columns.AutoFit
+    
+    ' Inform the user that the operation is complete
+    MsgBox "Data copied successfully to the new worksheet.", vbInformation
+End Sub
