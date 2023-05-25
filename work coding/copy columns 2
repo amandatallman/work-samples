@@ -1,0 +1,34 @@
+Sub CopyColumnsToNewWorksheetWithTotal()
+    Dim sourceSheet As Worksheet
+    Dim targetSheet As Worksheet
+    Dim lastRow As Long
+    Dim targetRow As Long
+    Dim totalRange As Range
+    
+    ' Set the source sheet and target sheet variables
+    Set sourceSheet = ThisWorkbook.Worksheets("Sheet1") ' Replace "Sheet1" with the name of your source sheet
+    Set targetSheet = ThisWorkbook.Worksheets.Add ' Create a new worksheet for the copied data
+    
+    ' Find the last row with data in column A of the source sheet
+    lastRow = sourceSheet.Cells(sourceSheet.Rows.Count, "A").End(xlUp).Row
+    
+    ' Initialize the target row to start copying data
+    targetRow = 1
+    
+    ' Insert a column between columns E and F
+    sourceSheet.Columns("F:F").Insert Shift:=xlToRight
+    
+    ' Copy the data from the specified columns to the target sheet
+    sourceSheet.Range("A1:A" & lastRow & ", D1:E" & lastRow & ", F1:F" & lastRow & ", M1:M" & lastRow & ", O1:O" & lastRow & ", U1:U" & lastRow & ", AA1:AA" & lastRow).Copy _
+        Destination:=targetSheet.Cells(targetRow, 1)
+    
+    ' Calculate the total of columns D and E in the newly inserted column
+    Set totalRange = sourceSheet.Range("G1:G" & lastRow)
+    totalRange.Formula = "=D1+E1"
+    
+    ' Optional: Autofit the columns in the target sheet
+    targetSheet.UsedRange.Columns.AutoFit
+    
+    ' Optional: Provide a name to the target sheet
+    targetSheet.Name = "Copied Data" ' Replace "Copied Data" with your desired sheet name
+End Sub
