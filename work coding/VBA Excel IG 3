@@ -1,0 +1,55 @@
+Sub CopyDataToNewWorksheet()
+    Dim sourceSheet As Worksheet
+    Dim destinationSheet As Worksheet
+    Dim lastRow As Long
+    Dim i As Long, destinationRow As Long
+    Dim totalRange As Range
+    
+    ' Set the source and destination sheets
+    Set sourceSheet = ThisWorkbook.Sheets("Sheet1") ' Replace "Sheet1" with the name of your source sheet
+    Set destinationSheet = ThisWorkbook.Sheets.Add(After:=Sheets(Sheets.Count))
+    destinationSheet.Name = "CopiedData" ' Replace "CopiedData" with the desired name for the new sheet
+    
+    ' Find the last row in column C of the source sheet
+    lastRow = sourceSheet.Cells(sourceSheet.Rows.Count, "C").End(xlUp).Row
+    
+  
+    
+    ' Initialize the destination row
+    destinationRow = 2
+    
+   
+    
+    ' Loop through each row in column C
+    For i = 1 To lastRow
+        ' Check if the value in column C is 9
+        If sourceSheet.Cells(i, "C").Value = 9 Then
+            ' Copy columns A, B, F, I, and J to the destination sheet
+            sourceSheet.Range("A" & i & ":B" & i).Copy destinationSheet.Range("A" & destinationRow)
+            sourceSheet.Cells(i, "F").Copy destinationSheet.Cells(destinationRow, "C")
+            sourceSheet.Range("I" & i & ":J" & i).Copy destinationSheet.Range("D" & destinationRow)
+            destinationRow = destinationRow + 1
+        End If
+    Next i
+    
+     ' Insert a column between columns E and F
+    destinationSheet.Columns("E:E").Insert Shift:=xlToRight
+    
+
+      'Add headers
+    destinationSheet.Range("A1").Value = "Date/Time"
+    destinationSheet.Range("B1").Value = "Check #"
+    destinationSheet.Range("C1").Value = "Cashier ID"
+    destinationSheet.Range("D1").Value = "Tip"
+    destinationSheet.Range("E1").Value = "Subtotal"
+    destinationSheet.Range("F1").Value = "Total"
+    
+    
+    
+    
+    ' Autofit the columns in the destination sheet
+    destinationSheet.Columns.AutoFit
+    
+    ' Inform the user that the operation is complete
+    MsgBox "Data copied successfully to the new worksheet.", vbInformation
+End Sub
