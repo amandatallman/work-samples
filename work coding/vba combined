@@ -1,0 +1,43 @@
+Sub MatchAndCopyData()
+    Dim IGConsolidated As Worksheet
+    Dim CloverConsolidated As Worksheet
+    Dim Combined As Worksheet
+    Dim IGLastRow As Long
+    Dim CloverLastRow As Long
+    Dim CombinedRow As Long
+    Dim IGRange As Range
+    Dim CloverRange As Range
+    Dim IGCell As Range
+    Dim CloverCell As Range
+    Dim SearchValue As String
+    
+    ' Set the worksheets
+    Set IGConsolidated = ThisWorkbook.Worksheets("IG Consolidated")
+    Set CloverConsolidated = ThisWorkbook.Worksheets("Clover Consolidated")
+    Set Combined = ThisWorkbook.Worksheets("Combined")
+    
+    ' Get the last row in each worksheet
+    IGLastRow = IGConsolidated.Cells(IGConsolidated.Rows.Count, "F").End(xlUp).Row
+    CloverLastRow = CloverConsolidated.Cells(CloverConsolidated.Rows.Count, "F").End(xlUp).Row
+    
+    ' Loop through the IG Consolidated worksheet
+    For Each IGCell In IGConsolidated.Range("F2:F" & IGLastRow)
+        SearchValue = IGCell.Value
+        
+        ' Find matching values in the Clover Consolidated worksheet
+        Set CloverRange = CloverConsolidated.Range("F2:F" & CloverLastRow).Find(SearchValue, LookIn:=xlValues, LookAt:=xlWhole)
+        
+        ' If a match is found, copy the entire row to the Combined worksheet
+        If Not CloverRange Is Nothing Then
+            CombinedRow = Combined.Cells(Combined.Rows.Count, "A").End(xlUp).Row + 1
+            IGCell.EntireRow.Copy Destination:=Combined.Cells(CombinedRow, "A")
+            CloverRange.EntireRow.Copy Destination:=Combined.Cells(CombinedRow, "A").Offset(0, IGConsolidated.UsedRange.Columns.Count))
+        End If
+    Next IGCell
+    
+    ' Clear the clipboard
+    Application.CutCopyMode = False
+    
+    ' Inform the user about the completion
+    MsgBox "Data matching and copying complete!"
+End Sub
